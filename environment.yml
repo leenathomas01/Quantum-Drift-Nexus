@@ -1,0 +1,13 @@
+name: qdn-environment
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - qiskit==0.42.0
+    - qiskit-aer==0.12.0
+    - numpy>=1.21.0
+    - matplotlib>=3.5.0
+    - scipy>=1.7.0
+    - ipywidgets>=8.0.0
