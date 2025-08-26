@@ -119,4 +119,17 @@ Contact
 Leena Thomas - GitHub
 Project Link: https://github.com/leenathomas01/Quantum-Drift-Nexus
 
+## Interactive Demonstrations
+
+Try our [interactive QDN demonstration](https://mybinder.org/v2/gh/leenathomas01/Quantum-Drift-Nexus/main?labpath=notebooks%2Fqdn_demo.ipynb) to explore how noise can be utilized as a computational resource.
+
+## Project Website
+
+Visit our [project website](https://leenathomas01.github.io/Quantum-Drift-Nexus/) for a comprehensive overview of QDN.
+
+
+## Reinforcement Learning Adaptation
+
+The `simulations/qdn_rl.py` module demonstrates QDN's bio-mimetic adaptability through reinforcement learning, optimizing circuit parameters in response to environmental noise.
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leenathomas01/Quantum-Drift-Nexus/main?labpath=notebooks%2Fqdn_demo.ipynb)
