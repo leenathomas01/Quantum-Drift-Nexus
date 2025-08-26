@@ -4,7 +4,7 @@ Quantum Drift Nexus (QDN)
 **Overview**
 
 The Quantum Drift Nexus (QDN) is a next-generation architecture for autonomous, self-sustaining hybrid computational systems.
-This project introduces a novel approach to quantum computing by reframing quantum noise as a computational resource rather than an obstacle.
+This project introduces a novel approach to quantum computing by **reframing quantum noise as a computational resource** rather than an obstacle.
 The architecture unifies energy harvesting, adaptive computation, and holographic information encoding into a closed-loop system designed for resilience and scalability.
 
 **Core Innovations**
