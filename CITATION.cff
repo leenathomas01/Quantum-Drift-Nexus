@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Thomas"
+  given-names: "Leena"
+title: "Quantum Drift Nexus: A Canonical Architectural Blueprint"
+version: 0.1.0
+date-released: 2025-08-26
+url: "https://github.com/leenathomas01/Quantum-Drift-Nexus"
