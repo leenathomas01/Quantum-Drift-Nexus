@@ -118,3 +118,5 @@ If you use QDN concepts in your research, please cite:
 Contact
 Leena Thomas - GitHub
 Project Link: https://github.com/leenathomas01/Quantum-Drift-Nexus
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leenathomas01/Quantum-Drift-Nexus/main?labpath=notebooks%2Fqdn_demo.ipynb)
