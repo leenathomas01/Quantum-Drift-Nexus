@@ -46,7 +46,8 @@ QDN employs three primary evaluation metrics:
 * **Throughput KPI:**
   Target performance benchmark: 10^12 ops/s/cm³, measured as computational throughput normalized by system volume.
 
-![QDN Architecture Diagram](diagrams/qdn_architecture.png)
+  <img width="992" height="751" alt="image" src="https://github.com/user-attachments/assets/2eeb601d-dccd-4f85-9f49-4f352e7c0a92" />
+
 *Figure 1: Conceptual representation of the QDN architecture showing the integration of energy harvesting, quantum-bio-classical computation, and holographic storage layers.*
 
 ---
