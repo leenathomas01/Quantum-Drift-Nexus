@@ -1,6 +1,3 @@
-Quantum Drift Nexus (QDN)
-<img width="992" height="751" alt="image" src="https://github.com/user-attachments/assets/b739ff67-91fd-4604-a224-e2381d60a054" />
-
 # Quantum Drift Nexus (QDN)
 
 ![QDN Architecture](diagrams/qdn_architecture.png)
