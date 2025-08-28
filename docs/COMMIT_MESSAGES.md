@@ -1,4 +1,4 @@
-# Commit Message Style Guide
+# Commit Message Style Guide:
 
 To keep the Quantum Drift Nexus repo history clean, readable, and professional, follow this conventional commit format. It helps with automated changelogs and makes collaboration easier. Structure: `type(scope): brief description`
 
