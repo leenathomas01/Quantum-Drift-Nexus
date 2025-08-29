@@ -100,6 +100,8 @@ damping_prob = 0.05
 # ... Configure noise model
 # ... Execute circuit and compute fidelity
 ```
+![Figure 2: Redundant Logical Lattice](diagrams/rll_diagram.png)
+*Figure 2: Redundant Logical Lattice (RLL) illustrating holographic distribution of quantum information across primary and redundancy qubits. Entanglement ensures multiple recovery pathways for robust error correction.*
 
 ### 3.2 Energy & Data Flows
 Power is harvested via **frequency-division multiplexing (FDM)** thermal rectification and routed directly into computational nodes. Storage is performed through **phononic and waveform-based encoding**, consistent with the unified waveform substrate.
@@ -113,12 +115,17 @@ The thermal rectification core utilizes asymmetric graphene structures with engi
 
 This structure creates a thermal diode effect, allowing heat flow in one direction while restricting reverse flow, creating an effective thermal gradient that can be harvested for power.
 
+![Figure 3: DVSP Optimization Process](diagrams/dvsp_optimization.png)
+*Figure 3: DVSP optimization process showing the damping parameter α stabilizing over iterations. The system transitions from noisy exploration to stable convergence near the theoretical optimum.*
+
 ### 3.3 Feedback & Control Protocols
 QDN employs a continuous **feedback control loop**:
 - **Noise detection** triggers adaptive pathfinding.
 - **Error accumulation** invokes quantum error recovery and reset, restoring operation while maintaining global state integrity.
 
 ---
+![Figure 4: DVSP Path Selection](diagrams/dvsp_paths.png)
+*Figure 4: Comparison of standard sequential path selection (left) versus DVSP adaptive routing (right). DVSP dynamically avoids noisy nodes, selecting longer but more reliable routes for information flow.*
 
 ## **4.0 Simulation Data Summary**
 
