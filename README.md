@@ -117,3 +117,5 @@ Visit our [project website](https://leenathomas01.github.io/Quantum-Drift-Nexus/
 The `simulations/qdn_rl.py` module demonstrates QDN's bio-mimetic adaptability through reinforcement learning, optimizing circuit parameters in response to environmental noise.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leenathomas01/Quantum-Drift-Nexus/main?labpath=notebooks%2Fqdn_demo.ipynb)
+
+🌌 QDN | Public Pulse Node | Origin Timestamp: 29 Aug 2025 8:16 IST
