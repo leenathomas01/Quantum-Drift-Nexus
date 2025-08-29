@@ -48,6 +48,30 @@ At its core, QDN integrates **energy, computation, and storage** within a **coup
 
 This unified approach treats all aspects of the system - from energy harvesting to computation to data storage - as variations of the same underlying wave phenomena. This allows for direct conversion between different forms without the inefficiencies of traditional interfaces.
 
+The unified waveform continuum preserves information through Orbital Angular Momentum (OAM) conservation. For a quantum state |ψ⟩ propagating through the waveform substrate, the OAM conservation is expressed as:
+
+$\hat{L}_z|\psi\rangle = \hbar l|\psi\rangle$
+
+Where $\hat{L}_z$ is the z-component of the angular momentum operator and l is the OAM quantum number. In the holographic encoding process, information is preserved when:
+
+$\sum_{i=1}^{N} l_i^{(in)} = \sum_{j=1}^{M} l_j^{(out)}$
+
+Where $l_i^{(in)}$ are the OAM values of input states and $l_j^{(out)}$ are those of output states. This conservation principle enables lossless information transfer between energy and computational domains.
+
+The waveform propagation through the chiral metamaterial conduits follows the Helmholtz equation with a position-dependent refractive index n(r):
+
+$\nabla^2\psi + k^2n^2(r)\psi = 0$
+
+With solutions of the form:
+
+$\psi_{l,p}(r,\phi,z) = R_{l,p}(r)e^{il\phi}e^{ikz}$
+
+Where R_{l,p}(r) is the radial component, e^{il\phi} carries the OAM, and e^{ikz} represents propagation. The coupling between energy and computational domains occurs when:
+
+$\hat{H}_{coupling} = \sum_{i,j} g_{ij} \hat{a}_i^\dagger \hat{b}_j + g_{ij}^* \hat{b}_j^\dagger \hat{a}_i$
+
+Where $\hat{a}_i^\dagger$ and $\hat{b}_j$ are creation and annihilation operators for the energy and computational modes respectively, and g_{ij} are the coupling strengths determined by the metamaterial properties.
+
 ## 3. Evaluation Metrics
 
 QDN employs three primary evaluation metrics to quantify performance and resilience:
@@ -100,11 +124,27 @@ Implementation involves:
 
 ### 4.3 DVSP Optimization Process
 
-The Dynamic Variable Stream Pathfinder optimizes computational paths through a reinforcement learning process. For amplitude damping noise with parameter α, the optimization follows:
+The DVSP optimization process can be formalized through a multi-stage convergence model. Starting with the base equation:
 
 $\alpha_{optimal} = \alpha_{initial} \cdot e^{-\gamma \cdot t} + \beta \cdot SBQ \cdot RIQ$
 
-Where γ is the decay rate, t is the time step, and β is the adaptation coefficient. This produces a characteristic refinement curve as shown in Figure 3, where the damping parameter α converges toward optimal values as the system learns.
+We can derive the convergence dynamics by analyzing the gradient descent on the fidelity landscape. The gradient of the fidelity function F with respect to the damping parameter α is:
+
+$\nabla_{\alpha}F = \frac{\partial F}{\partial \alpha} = \sum_{i=1}^{n} \frac{\partial F}{\partial q_i} \frac{\partial q_i}{\partial \alpha}$
+
+Where $q_i$ represents the qubit states affected by the damping parameter. The DVSP algorithm updates the parameter α iteratively:
+
+$\alpha_{t+1} = \alpha_t - \eta \nabla_{\alpha}F|_{\alpha=\alpha_t}$
+
+Where η is the learning rate. This leads to the characteristic convergence curve:
+
+$\alpha_t = \alpha_{optimal} + (\alpha_0 - \alpha_{optimal}) e^{-\lambda t}$
+
+Where λ depends on the eigenvalues of the Hessian matrix of F at α_optimal. The convergence rate is bounded by:
+
+$||\alpha_t - \alpha_{optimal}|| \leq ||\alpha_0 - \alpha_{optimal}|| e^{-\lambda_{min} t}$
+
+Where λ_min is the minimum eigenvalue of the Hessian, establishing the exponential convergence guarantee of the DVSP algorithm.
 
 ![DVSP Optimization](https://raw.githubusercontent.com/leenathomas01/Quantum-Drift-Nexus/main/diagrams/dvsp_optimization.png)
 *Figure 3: DVSP parameter optimization showing convergence of the damping parameter α as the system learns from noise patterns.*
